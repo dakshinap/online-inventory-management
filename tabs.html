@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="tabs_example.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jQueryUI.js"></script>    
+    <script src="tabs.js"></script>
+</head>
+<body>
+
+  <h2>Simple Tab Example</h2>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1"><span>New Record</span></a></li>
+        <li><a href="#tabs-2"><span>Edit Record</span></a></li>
+        <li><a href="#tabs-3"><span>Delete Record</span></a></li>       
+      </ul>
+      <div id="tabs-1">
+        <p>
+          <table id="customers">
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>SKU</td>
+            <td><input type="text" id="sku"></td>
+            <td id="sku_err"></td>
+          </tr>
+          <tr>
+            <td>Category</td>
+            <td><select>
+            <option value="nose">Nose</option>
+            <option value="cheeks">Cheeks</option>
+            <option value="lips">Lips</option>
+            <option value="eyes">Eyes</option>
+            <option value="brows">Brows</option>
+             <option value="other">Other</option>
+            </select></td>
+            <td id="cat_err"></td>
+          </tr>
+          <tr>
+            <td>Vendor</td>
+            <td><input type="text" id="vendor"></td>
+            <td id="ven_err"></td>
+          </tr>
+          <tr>
+            <td>Manufacturer's Identifier</td>
+            <td><input type="text" id="mid"></td>
+            <td id="mid_err"></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><input type="text" id="desc"></td>
+            <td id="des_err"></td>
+          </tr>
+          <tr>
+            <td>Features</td>
+            <td><input type="text" id="features"></td>
+            <td id="ftr_err"></td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td><input type="text" id="cost"></td>
+            <td id="cst_err"></td>
+          </tr>
+          <tr>
+            <td>Retail</td>
+            <td><input type="text" id="retail"></td>
+            <td id="ret_err"></td>
+          </tr>
+          <tr>
+            <td>Quantity</td>
+            <td><input type="text" id="quantity"></td>
+            <td id="qty_err"></td>
+          </tr>
+          <tr>
+            <td>Product Image</td>
+            <td><input type="file" id="p_img" name="product_image" /></td>
+            <td id="img_err"></td>
+          </tr>
+        </table>
+      </p>
+      <input type="submit" id="new_item" value="Submit">
+      </div>
+      <div id="tabs-2">
+        <p>
+          Edit Record goes here.
+        </p>
+      </div>
+      <div id="tabs-3">
+        <p>
+          Delete Record goes here.
+        </p>
+      </div>
+    </div>
+</body>
+</html>

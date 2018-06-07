@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://jadran.sdsu.edu/~jadrn031/proj1/jquery/jquery.js"></script>
+    <script src="http://jadran.sdsu.edu/~jadrn031/proj1/login.js"></script>
+    <title> Dak's Makeup Alley </title>
+</head>
+<body style="background-color:pink;">
+<h1 align="center">Dak's Makeup Alley</h1>
+	<form align="center" method="POST">
+		User Name:<br>
+	  	<input type="text" style="font-size:120%;"  id="usrName" name="username"><br><div id="err_usr" class="errorMessage"></div><br>
+	 	User Password:<br>
+	  	<input type="password" style="font-size:120%" id="pwd" name="psw"><br><div id="err_pwd" class="errorMessage"></div><br><br><br>
+	  	<input type="submit"   style="width:150px;height:200px;" value="Submit" id="sub">
+  		<input type="reset"    style="width:150px;height:200px;"  value="Clear" id="clr" ><br>
+	</form>
+	<p id="errorMessage" align="center">ERROR, wrong username or password</p>
+</body>
+</html>
